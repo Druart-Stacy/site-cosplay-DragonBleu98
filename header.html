@@ -1,38 +1,49 @@
 <header class="bg-[url('src/img/flamebleu.jpg')] bg-cover bg-center h-[10vh] w-full p-4">
     <div class="container mx-auto flex justify-between items-center py-4">
+        
         <!-- Logo et titre -->
         <div class="flex items-center space-x-4">
             <!-- Logo -->
             <img src="src/img/logo1.png" alt="Logo DragonBleu98" class="w-20 h-auto">
             <!-- Titre -->
             <h1 class="text-xl font-bold text-blue-300">DragonBleu98</h1>
-           
         </div>
-    
-        <!-- Navigation -->
-        
-            <ul class="flex space-x-4 justify-center">
-                <li>
-                    <a href="index.html" class="bg-blue-700 text-black font-bold py-2 px-6 rounded-full hover:bg-blue-800">
-                        Index
-                    </a>
-                </li>
-                <li>
-                    <a href="events.html" class="bg-blue-500 text-black font-bold py-2 px-6 rounded-full hover:bg-blue-600">
-                        Events
-                    </a>
-                </li>
-                <li>
-                    <a href="agenda.html" class="bg-blue-300 text-black font-bold py-2 px-6 rounded-full hover:bg-blue-400">
-                        Agenda
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html" class="bg-blue-200 text-black font-bold py-2 px-6 rounded-full hover:bg-blue-300">
-                        À propos
-                    </a>
-                </li>
+
+        <!-- Navigation Bureau -->
+        <nav class="hidden lg:block">
+            <ul class="font-medium flex flex-row p-4 md:p-0 space-x-8">
+                <li><a href="index.html" class="py-2 px-3 text-white bg-blue-700 rounded-full">Acceuil</a></li>
+                <li><a href="events.html" class="py-2 px-3 text-gray-900 bg-blue-500 rounded-full">Events</a></li>
+                <li><a href="agenda.html" class="py-2 px-3 text-gray-900 bg-blue-300 rounded-full">Agenda</a></li>
+                <li><a href="about.html" class="py-2 px-3 text-gray-900 bg-blue-200 rounded-full">À propos</a></li>
             </ul>
         </nav>
+        
     </div>
+
+    <!-- Hamburger button pour mobile -->
+    <button type="button" class="-my-1 -mr-1 ml-6 flex items-center justify-center lg:hidden" id="hamburger-button">
+        <svg viewBox="0 0 24 24" class="w-6 h-6 stroke-slate-900">
+            <path d="M3.75 12h16.5M3.75 6.75h16.5M3.75 17.25h16.5" fill="none" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+    </button>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-nav" class="lg:hidden mt-4 hidden">
+        <ul class="flex flex-col space-y-4 items-center">
+            <li><a href="index.html" class="bg-blue-700 text-black font-bold py-2 px-6 rounded-full hover:bg-blue-800">Index</a></li>
+            <li><a href="events.html" class="bg-blue-500 text-black font-bold py-2 px-6 rounded-full hover:bg-blue-600">Events</a></li>
+            <li><a href="agenda.html" class="bg-blue-300 text-black font-bold py-2 px-6 rounded-full hover:bg-blue-400">Agenda</a></li>
+            <li><a href="about.html" class="bg-blue-200 text-black font-bold py-2 px-6 rounded-full hover:bg-blue-300">À propos</a></li>
+        </ul>
+    </nav>
 </header>
+
+<script>
+    const hamburgerButton = document.getElementById('hamburger-button');
+    const mobileNav = document.getElementById('mobile-nav');
+    
+    hamburgerButton.addEventListener('click', () => {
+        mobileNav.classList.toggle('hidden');
+    });
+</script>

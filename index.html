@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="icon" href="src/img/logo1.png" type="image/png">
+    <!-- Inclure Tailwind CSS via un CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- Placeholder for Header -->
+    <!-- Placeholder pour Header -->
     <div id="header-placeholder"></div>
 
     <!-- Contenu principal -->
     <main class="flex-grow container mx-auto p-4">
-        <div class="relative w-full  overflow-hidden">
-            <img src="src/img/cosplay/cosplay-ranma.jpg" alt="">
+        <div class="relative w-full overflow-hidden">
+            <img src="src/img/cosplay/cosplay-ranma.jpg" alt="Cosplay de Ranma" class="w-full h-auto">
         </div>
     </main>
-    <div class="flex-grow container mx-auto p-4">
-        <img src="src/img/cosplay/" alt="">
-        <img src="src/img/cosplay/" alt="">
-        <img src="src/img/cosplay/" alt="">
-        <img src="src/img/cosplay/" alt="">
 
+    <div class="flex-grow container mx-auto p-4">
+        <!-- Images supplémentaires -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            <img src="src/img/cosplay/image1.jpg" alt="Cosplay 1" class="w-full h-auto object-cover">
+            <img src="src/img/cosplay/image2.jpg" alt="Cosplay 2" class="w-full h-auto object-cover">
+            <img src="src/img/cosplay/image3.jpg" alt="Cosplay 3" class="w-full h-auto object-cover">
+            <img src="src/img/cosplay/image4.jpg" alt="Cosplay 4" class="w-full h-auto object-cover">
+        </div>
     </div>
 
-    <!-- Placeholder for Footer -->
+    <!-- Placeholder pour Footer -->
     <div id="footer-placeholder"></div>
 
     <!-- Script pour inclure le header et le footer -->
