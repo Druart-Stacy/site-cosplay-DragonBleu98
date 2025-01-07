@@ -6,37 +6,66 @@
     <title>Cosplay Universe</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-gray-100 font-sans">
+<body class="bg-gray-950 h-screen">
     
     <!-- Placeholder pour Header -->
     <div id="header-placeholder"></div>
 
-    <main class="p-8 text-center">
-        <div class="bg-black bg-opacity-50 py-8 text-center shadow-md">
-            <h1 class="text-5xl font-extrabold tracking-wider">DragonBleu98  Cosplay</h1>
+    <main class="h-full flex">
+        <div class="grid    sm:grid-cols-1 md:grid-cols-2">
+        <!-- Section gauche avec l'image -->
+        <div class="w-1/2 h-full ">
+            <img src="src/img/cosplay/mangames/ranma.jpg" alt="Ranma" class="w-full h-full object-cover rounded-xl">
         </div>
-        <h2 class="text-6xl font-extrabold text-white ">Unleash Your Inner Hero!</h2>
-        <p class="text-xl mb-8 max-w-2xl mx-auto">
-            Join the ultimate community of cosplay enthusiasts. Explore tutorials, share your creations, and connect with fans worldwide.
-        </p>
-        <a href="#" class="inline-block bg-white text-pink-500 font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-100 transition">Get Started</a>
+
+        <!-- Section droite avec le bouton et le texte -->
+        <div class="w-1/2 h-full flex flex-col justify-between text-white p-8">
+            <!-- Bouton centré verticalement -->
+            <div class="flex justify-center items-center flex-grow">
+                <a href="#" class="inline-block text-white font-semibold py-3 px-6 rounded-full bg-blue-500 shadow-lg hover:bg-blue-600 transition">
+                    Qui je suis?
+                </a>
+            </div>
+        </div>
+            <!-- Texte en bas à droite -->
+            <div class="text-right">
+                <h1 class="text-2xl font-extrabold  text-center">DragonBleu98 Cosplay</h1>
+            </div>
+        </div>
     </main>
 
-     <!-- Placeholder pour Footer -->
-     <div id="footer-placeholder"></div>
+    <!-- Section des cercles en dessous -->
+    <div class="mt-8 grid sm:grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center p-8">
+        <a href="">
+            <img src="src/img/cosplay/braderies/dourAraleRonde.jpg" alt="" class="w-1/2 h-1/2 object-cover rounded-full oje">
+        </a>
+        <a href="">
+            <img src="src/img/cosplay/braderies/dourAraleRonde.jpg" alt="" class="w-1/2 h-1/2 object-cover rounded-full">
+        </a>
+        <a href="">
+            <img src="src/img/cosplay/braderies/dourAraleRonde.jpg" alt="" class="w-1/2 h-1/2 object-cover rounded-full">
+        </a>
+        <a href="">
+            <img src="src/img/cosplay/braderies/dourAraleRonde.jpg" alt="" class="w-1/2 h-1/2 object-cover rounded-full">
+        </a>
+    </div>
 
-     <!-- Script pour inclure le header et le footer -->
-     <script>
-         // Charger le header
-         fetch('header.html')
-             .then(response => response.text())
-             .then(data => document.getElementById('header-placeholder').innerHTML = data);
- 
-         // Charger le footer
-         fetch('footer.html')
-             .then(response => response.text())
-             .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-     </script>
-    
+    <!-- Placeholder pour Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script pour inclure le header et le footer -->
+    <script>
+        // Charger le header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-placeholder').innerHTML = data)
+            .catch(error => console.error('Erreur lors du chargement du header:', error));
+
+        // Charger le footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+            .catch(error => console.error('Erreur lors du chargement du footer:', error));
+    </script>
 </body>
 </html>
