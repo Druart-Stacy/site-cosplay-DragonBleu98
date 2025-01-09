@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 h-screen">
+    
+    <!-- Placeholder pour Header -->
+    <div id="header-placeholder"></div>
+    
+    <main class="flex-grow">
+        <div class="container mx-auto px-4 py-8">
+        <!-- <div class="grid sm:grid-cols-1  h-full"> -->
+            <article class="bg-gray-800 rounded-lg shadow-lg p-6">
+            <h2 class="text-white text-4xl mb-4">Qui a inventé le cosplay ?</h2> <br>
+            
+            <p class="text-white text-2xl mb-4">Contrairement aux idées reçues, ce ne sont pas les Japonais qui ont inventé le cosplay, mais un Américain du nom de Forrest J. Ackerman<br> 
+            <br>
+                En <strong>1939</strong> Forrest s'est rendu à la première convention américaine (le WorldCon) en homme du futur, dans un costume crachant des étincelles.<br>
+            C'est de là que le cosplay et les premiers concours sont nés.<br> <br>
+            Photo de de Forrest J. Ackerman dans son costume de l'homme futur si--dessous
+            <img src="src/img/hommefuture.jpg" alt="Photo de Forrest J. Ackerman dans son costume de l'homme futur">
+            </p>
+                
+            <h2 class="text-white text-4xl mb-4">Son évolution :</h2> <br>
+            <p class="text-white text-2xl"> 
+            Ce fut dans les années <strong>1970-1980</strong> que le cosplay commença à devenir populaire grâce à la sortie de la série  Star Trek et de la trilogie de films Star Wars. <br>  
+            <br>
+            En Tunisie, le cosplay a vu le jour en <strong>mars 2010</strong> grâce à "First Cosplay in Tunisia", une organisation de fans de mangas qui a évolué par la suite grâce à Banzai, organisé par JET (Japanese Event in Tunisia). <br>  
+            <br>
+            En Afrique du Nord et au Maroc, le cosplay est apparu lors des premiers Manga Expo organisés par l'association Dragon Tanger, puis avec Manga Afternoon. Créé le 24 janvier 2010 à Casablanca, ce fut le premier événement majeur consacré à la culture otaku au Maroc. <br>
+            <br>
+            Il démocratisa le cosplay dans ce pays avec plus d'une dizaine de rassemblements en deux ans. <br>  
+            <br>
+            Au Japon, le cosplay fut importé par un journaliste du nom de Takahashi dans les années <strong>1970</strong>, après qu'il ait publié un article sur le WorldCon.  
+            </p>
+            </article>
+        </div>
+    </main>
+        <!-- Placeholder pour Footer -->
+        <div id="footer-placeholder"></div>
+    
+        <!-- Script pour inclure le header et le footer -->
+        <script>
+            // Charger le header
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header-placeholder').innerHTML = data)
+                .catch(error => console.error('Erreur lors du chargement du header:', error));
+    
+            // Charger le footer
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+                .catch(error => console.error('Erreur lors du chargement du footer:', error));
+        </script>
+
+
+
+
+
+
+
+
+
+
+<!-- Aujourd'hui, le cosplay semble plus volontiers tourné vers la création de costumes relativement originaux, avec l'existence de concours se basant souvent sur la qualité, l'originalité du costume ou même sur la prestation scénique[réf. souhaitée] (durant approximativement entre une et deux minutes, mais souvent plus en hors-concours).
+
+Les bals costumés ont longtemps eu un grand succès dans les cour d'Europe, parfois à thème, certains thèmes, comme celui de l'Iliade, s'apparentant à du cosplay. Le premier événement de type cosplay documenté en Europe est peut-être un bal masqué organisé par l’écrivain de science-fiction Jules Verne à la fin du XIXe siècle. Bien qu’il ne soit pas obligatoire pour l’événement, de nombreux participants choisir de porter des costumes inspirés par les personnages des livres du romancier14.
+
+En Europe (plus particulièrement en France et en Italie et aussi en Allemagne), le cosplay prend une dimension plus théâtrale : la qualité des costumes est un point recherché, mais par les concours où les cosplayers se retrouvent en face d'un public devant lequel ils miment des combats, récitent des dialogues ou chantent (seuls ou en groupe), un certain jeu d'acteur est apprécié[réf. souhaitée]. On[Qui ?] appelle cela le roleplay.
+
+Bien que les cosplays soient généralement présentés comme des compétitions, le but des participants semble être de donner libre cours à une passion personnelle plutôt que de remporter une victoire[réf. nécessaire]. L'ambiance de ce genre de manifestation est très bon-enfant, et certains cosplayers ne participent jamais aux concours[réf. nécessaire].
+
+La plupart des cosplayers mettent un point d'honneur[réf. nécessaire] à créer leurs costumes eux-mêmes (y compris les accessoires tels que bijoux et armes) et à ne les utiliser qu'une seule fois[réf. souhaitée]. Il est d'ailleurs souvent mal vu, dans le cadre des concours, de présenter un costume qui a déjà été présenté lors d'un autre concours[réf. souhaitée] ou dont certains éléments ont été achetés plutôt que fabriqués[réf. souhaitée].
+
+Si le costume a été acheté en partie, le cosplayer n'a en général pas le droit de participer aux concours, mais peut faire ce que l'on appelle du « cosplay libre », c'est-à-dire se promener librement sur les lieux, généralement dans les allées d'une convention, ou de passer sur une scène spécifique au « cosplay libre »[réf. souhaitée].
+
+De plus, depuis quelques années, certains voient le cosplay comme un moyen de se faire de la publicité à peu de frais[réf. nécessaire]. Ainsi, des cinémas font rentrer gratuitement les spectateurs qui viennent déguisés lors de la sortie d'un « gros titre » (comme Star Wars ou Le Seigneur des anneaux). D'autres enseignes, telles que la Fnac et les Galeries Lafayette en France, organisent même des concours ou des animations autour du cosplay. -->
+
+

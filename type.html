@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 min-h-screen flex flex-col">
+    
+    <!-- Placeholder pour Header -->
+    <div id="header-placeholder"></div>
+    
+    <main class="flex-grow">
+        <div class="container mx-auto px-4 py-8">
+            <article class="bg-gray-800 rounded-lg shadow-lg p-6">
+                <h1 class="text-white text-6xl text-center mb-8">Les différents types de cosplays :</h1>  
+                
+                <!-- Section OC -->
+                <section class="mb-8">
+                    <h2 class="text-white text-4xl mb-4">Les OC (Original Character) :</h2>
+                    <p class="text-gray-300 text-2xl mb-6">  
+                        Une OC (Original Character) est un terme utilisé pour désigner les personnages imaginés par le cosplayer lui-même, ce qui offre une liberté totale au cosplayer, que ce soit au niveau du costume ou de l'interprétation.  
+                    </p>
+                </section>
+                
+                <!-- Section Crossplay -->
+                <section class="mb-8">
+                    <h2 class="text-white text-4xl mb-4">Crossplay</h2>
+                    <p class="text-gray-300 text-2xl mb-4">  
+                        Le Crossplay consiste à incarner un personnage de son genre opposé. <br> Par exemple, une femme se déguise en personnage masculin, ou inversement.  
+                    </p>
+                    <img src="src/img/ondine.jpg" alt="Exemple de Crossplay avec un personnage féminin" class="w-full max-w-lg mx-auto rounded-lg shadow-lg">
+                </section>
+                
+                <!-- Section Genderbend -->
+                <section class="mb-8">
+                    <h2 class="text-white text-4xl mb-4">Genderbend</h2>
+                    <p class="text-gray-300 text-2xl mb-4">  
+                        Le “Genderbend” consiste à incarner un personnage du genre opposé au sien, mais en adaptant la tenue, comme dans cet exemple de Zorro dans *One Piece*.  
+                        Cela permet aux participants de réinventer des personnages célèbres sous un autre angle, créant ainsi des versions féminines de héros masculins ou des versions masculines de héroïnes féminines.  
+                    </p>
+                    <img src="src/img/genderbend.jpg" alt="Exemple de Genderbend avec Zorro" class="w-full max-w-lg mx-auto rounded-lg shadow-lg">
+                </section>
+                
+                <!-- Section Gijinka -->
+                <section class="mb-8">
+                    <h2 class="text-white text-4xl mb-4">Gijinka</h2>
+                    <p class="text-gray-300 text-2xl mb-4">  
+                        Le Gijinka consiste à humaniser un personnage non humain, comme ce Nymphali par exemple.  
+                    </p>
+                    <img src="src/img/Gijinka.jpg" alt="Exemple de Gijinka avec Nymphali" class="w-full max-w-lg mx-auto rounded-lg shadow-lg">
+                </section>
+                
+                <!-- Section Mashup -->
+                <section class="mb-8">
+                    <h2 class="text-white text-4xl mb-4">Mashup</h2>
+                    <p class="text-gray-300 text-2xl mb-4">  
+                        Le “Mashup” combine au minimum deux personnages ou thèmes différents. <br>  
+                        Par exemple, imaginez un mélange entre Batman et un personnage de Star Wars ou encore Iron Man avec Pikachu. Cela offre une infinité de combinaisons possibles.  
+                    </p>
+                    <img src="src/img/Mashup.jpg" alt="Exemple de Mashup" class="w-full max-w-lg mx-auto rounded-lg shadow-lg">
+                </section>
+                
+                <!-- Section Armor Cosplay -->
+                <section>
+                    <h2 class="text-white text-4xl mb-4">Armor Cosplay</h2>
+                    <p class="text-gray-300 text-2xl">  
+                        Ces termes et catégories enrichissent le lexique du cosplay, facilitant la communication entre les passionnés et permettant à chacun de trouver sa propre niche dans cet univers en constante évolution.  
+                        Sous toutes ses formes, le cosplay célèbre la créativité, l’innovation et l’amour des personnages qui inspirent les fans du monde entier.  
+                        Le “Cosplay Accurate“, en particulier, incarne l’expression ultime de cette passion, poussant les limites de la précision et de l’attention aux détails pour rendre hommage aux personnages de manière authentique et immersive.  
+                    </p>
+                </section>
+            </article>
+        </div>
+    </main>
+    
+     <!-- Placeholder pour Footer -->
+     <div id="footer-placeholder"></div>
+    
+     <!-- Script pour charger le header et le footer -->
+     <script>
+         // Charger le header
+         fetch('header.html')
+             .then(response => response.text())
+             .then(data => document.getElementById('header-placeholder').innerHTML = data)
+             .catch(error => console.error('Erreur lors du chargement du header:', error));
+ 
+         // Charger le footer
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+             .catch(error => console.error('Erreur lors du chargement du footer:', error));
+     </script>
+</body>
+</html>
