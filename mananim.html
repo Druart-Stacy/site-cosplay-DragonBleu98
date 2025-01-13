@@ -3,24 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Manganime Gallery</title>
     <!-- Ajout de Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class=" bg-gray-950 p-4">
+<body class="bg-gray-950 p-8">
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-[50px] px-4">
+    <!-- Titre principal -->
+    <h1 class="text-white text-4xl font-bold mb-8 text-center">Manganime Gallery</h1>
+
+    <!-- Grille des images -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Première colonne -->
+        <div class="space-y-4">
+            <img 
+                src="src/img/cosplay/manganime/manganimeConcours.jpg" 
+                alt="Concours de Manganime" 
+                class="w-full h-auto rounded-lg shadow-lg"
+            />
+            <img 
+                src="src/img/cosplay/manganime/manganimeHss1.jpg" 
+                alt="Manganime HSS 1" 
+                class="w-full h-[420px] object-cover rounded-lg shadow-lg"
+            />
+        </div>
         
-            <!-- Image 1 et 2-->
-            <div>
-                <img  src="src/img/cosplay/manganime/manganimeConcours.jpg" alt="Gallery image 1" class="h-auto w-[1500px] rounded-lg shadow-lg"/>
-                <img src="src/img/cosplay/manganime/manganimeHss1.jpg" alt="Gallery image 2"class="h-[420px] w-1/2 objet-cover rounded-lg shadow-lg"  />
-            </div>
-            <!-- Image 3 et 4 -->
-            <div>
-                <img  src="src/img/cosplay/manganime/manganimeHss2.jpg" alt="Gallery image 3" class="h-[420px] w-1/2 rounded-lg shadow-lg" />
-                <img  src="src/img/cosplay/manganime/manganimeDemo.jpg" alt="Gallery image 4" class="h-auto w-[1500px] rounded-lg shadow-lg" />
-            </div>
+        <!-- Deuxième colonne -->
+        <div class="space-y-4">
+            <img 
+                src="src/img/cosplay/manganime/manganimeHss2.jpg" 
+                alt="Manganime HSS 2" 
+                class="w-full h-[420px] object-cover rounded-lg shadow-lg"
+            />
+            <img 
+                src="src/img/cosplay/manganime/manganimeDemo.jpg" 
+                alt="Démonstration Manganime" 
+                class="w-full h-auto rounded-lg shadow-lg"
+            />
         </div>
     </div>
 
