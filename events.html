@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+f<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,8 +41,8 @@
             <a href="facts.html">
                 <img src="src/img/facts.png" alt="Facts" class="w-[700px] h-[500px] object-cover rounded-full">
             </a>
-            <a href="braderie.html">
-                <img src="src/img/popshow.png" alt="Braderies" class="w-[700px] h-[500px]  object-cover rounded-full">
+            <a href="japanshows.html">
+                <img src="src/img/popshow.png" alt="Japan shows" class="w-[700px] h-[500px]  object-cover rounded-full">
             </a> 
             <!-- <a href="japanfest.html">
                 <img src="src/img/***" alt="Braderies" class="w-[700px] h-[500px]   object-cover rounded-full">
@@ -53,9 +53,9 @@
             <a href="trolletlegend.html">
                 <img src="src/img/***" alt="Braderies" class="w-[700px] h-[500px]   object-cover rounded-full">
             </a> -->
-            <!-- <a href="braderie.html">
-                <img src="src/img/Braderies.jpg" alt="Braderies" class="w-[700px] h-[500px] object-cover rounded-full">
-            </a> -->
+            <a href="braderie.html">
+                <img src="src/img/braderie.jpg" alt="Braderies" class="w-[700px] h-[500px] object-cover rounded-full">
+            </a>
            
         </div>
     </main>
@@ -66,14 +66,17 @@
     <!-- Script pour inclure le header et le footer -->
     <script>
         // Charger le header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header-placeholder').innerHTML = data);
-
-        // Charger le footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-    </script>
+      fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-placeholder').innerHTML = data)
+      .catch(error => console.error('Erreur lors du chargement du header:', error));
+  
+      // Charger le footer
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+      .catch(error => console.error('Erreur lors du chargement du footer:', error));
+  
+      </script>
 </body>
 </html>

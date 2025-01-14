@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-950 p-4">
+    <div id="header-placeholder"></div>
     <main class="max-w-screen-xl mx-auto p-4">
         <!-- Image principale -->
         <img src="src/img/dcon.webp" alt="D-con" class="w-full mb-8 rounded-md shadow-lg">
@@ -36,16 +37,19 @@
     <!-- Script pour inclure le header et le footer -->
     <script>
         // Charger le header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header-placeholder').innerHTML = data)
-            .catch(error => console.error('Erreur lors du chargement du header:', error));
-
-        // Charger le footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
-            .catch(error => console.error('Erreur lors du chargement du footer:', error));
-    </script>
+      fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-placeholder').innerHTML = data)
+      .catch(error => console.error('Erreur lors du chargement du header:', error));
+  
+      // Charger le footer
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+      .catch(error => console.error('Erreur lors du chargement du footer:', error));
+  
+      </script>
+  
+   
 </body>
 </html>

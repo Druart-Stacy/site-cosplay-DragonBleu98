@@ -6,67 +6,83 @@
     <title>Faut-il acheter ou faire soi-même ?</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-950 h-screen">
+<body class="bg-gray-950 h-screen flex flex-col">
     
     <!-- Placeholder pour Header -->
     <div id="header-placeholder"></div>
     
     <main class="flex-grow">
         <div class="container mx-auto px-4 py-8">
-            <h1 class="text-white text-6xl mb-4">Faut-il mieux acheter ou faire soi-même son cosplay ?</h1>
-            
-            <!-- Section Faire soi-même son cosplay -->
-            <h2 class="text-white text-4xl mb-4">Faire soi-même son cosplay</h2>
-            <div class="flex flex-col md:flex-row items-center mb-8">
-                <div class="w-full md:w-1/2">
-                    <img src="src/img/cosplay/braderies/dourArale.jpg" alt="Cosplay placard d'Arale" class="w-[1280px] h-[1020px]">
-                </div>
-                <div class="w-full md:w-1/2 pl-8">
-                    <p class="bg-gray-800 rounded-lg shadow-lg p-32 text-white text-2xl ">
-                        <strong>Avantages :</strong><br>
-                        Personnalisation complète : <em>Tu peux ajuster les détails pour qu'ils correspondent parfaitement à ta vision.</em><br>
-                        Satisfaction personnelle : <em>Il y a une grande fierté à porter quelque chose que tu as fabriqué toi-même.</em><br>
-                        Développement de compétences : <em>Tu peux apprendre ou améliorer des techniques de couture, de peinture, ou de création d'accessoires.</em><br>
-                        Qualité ajustable : <em>Tu contrôles les matériaux et la finition, ce qui peut donner un meilleur résultat qu’un cosplay acheté.</em><br><br>
-                        <strong>Inconvénients :</strong><br>
-                        Temps consommé : <em>Créer un cosplay peut prendre beaucoup de temps.</em><br>
-                        Coût potentiel élevé : <em>Si tu dois acheter beaucoup de matériaux ou d'outils, cela peut revenir cher.</em><br>
-                        Difficulté technique : <em>Si tu es débutant, certains aspects (couture, armures, perruques) peuvent être compliqués.</em>
-                    </p>
-                </div>
-            </div>
+            <article class="bg-gray-700 rounded-lg shadow-lg p-6">
+                <h1 class="text-white text-6xl mb-8">Faut-il mieux acheter ou faire soi-même son cosplay ?</h1>
+                
+                <!-- Section Faire soi-même son cosplay -->
+                <h2 class="text-white text-4xl mb-6">Faire soi-même son cosplay</h2>
+                <section class="flex flex-col md:flex-row items-center mb-12">
+                    <div class="w-full md:w-1/2">
+                        <img src="src/img/ninja.jpg" alt="Cosplay fait maison représentant une armure" class="max-w-full rounded-lg shadow-lg">
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-8">
+                        <p class="bg-gray-800 rounded-lg shadow-lg p-6 text-white text-2xl leading-relaxed">
+                            <strong>Avantages :</strong><br>
+                            Personnalisation complète : <em>Tu peux ajuster les détails pour qu'ils correspondent parfaitement à ta vision.</em><br>
+                            Satisfaction personnelle : <em>Il y a une grande fierté à porter quelque chose que tu as fabriqué toi-même.</em><br>
+                            Développement de compétences : <em>Tu peux apprendre ou améliorer des techniques de couture, de peinture, ou de création d'accessoires.</em><br>
+                            Qualité ajustable : <em>Tu contrôles les matériaux et la finition, ce qui peut donner un meilleur résultat qu’un cosplay acheté.</em><br><br>
+                            <strong>Inconvénients :</strong><br>
+                            Temps consommé : <em>Créer un cosplay peut prendre beaucoup de temps.</em><br>
+                            Coût potentiel élevé : <em>Si tu dois acheter beaucoup de matériaux ou d'outils, cela peut revenir cher.</em><br>
+                            Difficulté technique : <em>Si tu es débutant, certains aspects (couture, armures, perruques) peuvent être compliqués.</em>
+                        </p>
+                    </div>
+                </section>
 
-            <!-- Section Acheter un cosplay -->
-            <h2 class="text-white text-4xl mb-4">Acheter un cosplay</h2>
-            <div class="flex flex-col md:flex-row items-center mb-8">
-                <div class="w-full md:w-1/2">
-                    <img src="src/img/Photodebrokenadmiralpexels.jpg" alt="Cosplay acheté" class="w-[1280px] h-[1030px]">
-                </div>
-                <div class="w-full md:w-1/2 pl-8">
-                    <p class="bg-gray-800 rounded-lg shadow-lg p-32 text-white text-2xl ">
-                        <strong>Avantages :</strong><br>
-                        Gain de temps : <em>Idéal si tu manques de temps pour fabriquer ton costume.</em><br>
-                        Accessibilité : <em>Il existe de nombreuses boutiques (comme AliExpress, Etsy ou des sites spécialisés) qui proposent des cosplays variés et à différents prix.</em><br>
-                        Praticité : <em>Aucun besoin d'acquérir ou de maîtriser des compétences spécifiques.</em><br>
-                        Qualité standardisée : <em>Certaines boutiques offrent des cosplays bien conçus, avec des détails réalistes.</em><br><br>
-                        <strong>Inconvénients :</strong><br>
-                        Moins de personnalisation : <em>Les cosplays préfabriqués peuvent ne pas être parfaitement ajustés ou manquer de détails spécifiques.</em><br>
-                        Qualité variable : <em>Certains cosplays bon marché peuvent être décevants en termes de matériaux ou de finition.</em><br>
-                        Taille et ajustements : <em>Les tailles standard peuvent ne pas te convenir parfaitement, nécessitant parfois des retouches.</em><br><br>
+                <!-- Section Acheter un cosplay -->
+                <h2 class="text-white text-4xl mb-6">Acheter un cosplay</h2>
+                <section class="flex flex-col md:flex-row items-center mb-12">
+                    <div class="w-full md:w-1/2">
+                        <img src="src/img/Photodebrokenadmiralpexels.jpg" alt="Cosplay acheté, exemple d'un personnage complet" class="max-w-full rounded-lg shadow-lg">
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-8">
+                        <p class="bg-gray-800 rounded-lg shadow-lg p-6 text-white text-2xl leading-relaxed">
+                            <strong>Avantages :</strong><br>
+                            Gain de temps : <em>Idéal si tu manques de temps pour fabriquer ton costume.</em><br>
+                            Accessibilité : <em>Il existe de nombreuses boutiques (comme AliExpress, Etsy ou des sites spécialisés) qui proposent des cosplays variés et à différents prix.</em><br>
+                            Praticité : <em>Aucun besoin d'acquérir ou de maîtriser des compétences spécifiques.</em><br>
+                            Qualité standardisée : <em>Certaines boutiques offrent des cosplays bien conçus, avec des détails réalistes.</em><br><br>
+                            <strong>Inconvénients :</strong><br>
+                            Moins de personnalisation : <em>Les cosplays préfabriqués peuvent ne pas être parfaitement ajustés ou manquer de détails spécifiques.</em><br>
+                            Qualité variable : <em>Certains cosplays bon marché peuvent être décevants en termes de matériaux ou de finition.</em><br>
+                            Taille et ajustements : <em>Les tailles standard peuvent ne pas te convenir parfaitement, nécessitant parfois des retouches.</em>
+                        </p>
+                    </div>
+                </section>
+                
+                <!-- Section Cosplay placard -->
+                <h2 class="text-white text-4xl mb-6">Cosplay placard</h2>
+                <section class="flex flex-col md:flex-row items-center mb-12">
+                    <div class="w-full md:w-1/2">
+                        <img src="src/img/cosplay/braderies/dourArale.jpg" alt="Cosplay réalisé avec des vêtements du quotidien" class="max-w-full rounded-lg shadow-lg">
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-8">
+                        <p class="bg-gray-800 rounded-lg shadow-lg p-6 text-white text-2xl leading-relaxed">
+                        Tu n’as pas trouvé de cosplay qui te convienne, ou tu ne veux pas (ou ne peux pas) le créer toi-même ? Pas de souci, le cosplay placard est fait pour toi !<br><br>
+                        Le <strong>cosplay placard</strong> (ou <strong>closet cosplay</strong> en anglais) désigne une méthode de création de cosplay en utilisant des vêtements, accessoires ou objets déjà disponibles chez soi, ou faciles à trouver dans des magasins classiques. L’objectif est de recréer l’apparence d’un personnage sans avoir à coudre, fabriquer ou acheter un costume complet sur mesure.<br><br>
+                        C’est une approche économique, accessible et souvent très créative, parfaite pour les débutants, les improvisations de dernière minute, ou pour les personnes qui souhaitent se lancer dans le cosplay avec un budget limité.
                     </p>
-                </div>
-            </div>
+                </section>
 
-            <!-- Section Facteurs à considérer -->
-            <h2 class="text-white text-4xl mb-4">Facteurs à considérer pour choisir :</h2>
-            <div class="w-full">
-                <p class="bg-gray-800 rounded-lg shadow-lg p-6 text-white text-2xl">
-                    <strong>Ton budget :</strong> <em>Faire un cosplay soi-même peut être moins cher pour des costumes simples, mais cher pour des costumes complexes. Acheter un cosplay offre un large éventail de prix, mais tu paieras pour la main-d'œuvre.</em><br>
-                    <strong>Ton temps disponible :</strong> <em>Si tu es pressé, acheter peut être une meilleure option. Si tu as du temps pour planifier et expérimenter, fabriquer est enrichissant.</em><br>
-                    <strong>Tes compétences ou ton envie d'apprendre :</strong> <em>Si tu as déjà des compétences (couture, bricolage, peinture), fabriquer peut être plus gratifiant. Si tu préfères porter un costume sans trop d’efforts, acheter est idéal.</em><br>
-                    <strong>Le type de cosplay :</strong> <em>Certains cosplays nécessitent des armures ou des accessoires complexes qui peuvent être plus faciles à acheter. Les vêtements simples ou les cosplays de personnages originaux se prêtent bien au fait-maison.</em><br>
-                </p>
-            </div>
+                <!-- Section Facteurs à considérer -->
+                <h2 class="text-white text-4xl mb-6">Facteurs à considérer pour choisir :</h2>
+                <section>
+                    <p class="bg-gray-800 rounded-lg shadow-lg p-6 text-white text-2xl leading-relaxed">
+                        <strong>Ton budget :</strong> <em>Faire un cosplay soi-même peut être moins cher pour des costumes simples, mais cher pour des costumes complexes. Acheter un cosplay offre un large éventail de prix, mais tu paieras pour la main-d'œuvre.</em><br>
+                        <strong>Ton temps disponible :</strong> <em>Si tu es pressé, acheter peut être une meilleure option. Si tu as du temps pour planifier et expérimenter, fabriquer est enrichissant.</em><br>
+                        <strong>Tes compétences ou ton envie d'apprendre :</strong> <em>Si tu as déjà des compétences (couture, bricolage, peinture), fabriquer peut être plus gratifiant. Si tu préfères porter un costume sans trop d’efforts, acheter est idéal.</em><br>
+                        <strong>Le type de cosplay :</strong> <em>Certains cosplays nécessitent des armures ou des accessoires complexes qui peuvent être plus faciles à acheter. Les vêtements simples ou les cosplays de personnages originaux se prêtent bien au fait-maison.</em>
+                    </p>
+                </section>
+            </article>
         </div>
     </main>
 
@@ -89,4 +105,3 @@
     </script>
 </body>
 </html>
-

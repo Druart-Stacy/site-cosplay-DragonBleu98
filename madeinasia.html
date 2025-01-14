@@ -4,40 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Made in Aia</title>
-    <!-- Ajout du CDN Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-950 p-4">
+<body class="bg-gray-950 h-screen">
+    
+    <!-- Placeholder pour Header -->
+    <div id="header-placeholder"></div>
+
     <main class="max-w-screen-xl mx-auto p-4">
         <!-- Image principale -->
-        <img src="src/img/japancon.jpg" alt="Japan Con Bruxelles" class="w-full mb-8 rounded-md shadow-lg">
+        <img src="src/img/mia.jpg" alt=" Made in Aia Bruxelles" class="w-full mb-8 rounded-md shadow-lg">
 
         <!-- Titre principal -->
-        <h1 class="text-white text-6xl mb-8 font-bold text-center">Japan Con Bruxelles</h1>
+        <h1 class="text-white text-6xl mb-8 font-bold text-center">Made in Aia Bruxelles</h1>
 
         <!-- Section d'images principales -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mb-16">
-            <img src="src/img/cosplay/japan-con/***" alt="Cosplay Lucifa" class="w-full h-[830px] object-cover rounded-md shadow-lg">
-            <img src="src/img/cosplay/japan-con/***" alt="Cosplay Amy" class="w-full h-[830px] object-cover rounded-md shadow-lg">
+            <img src="src/img/cosplay/mia/yami.jpg" alt="Yami" class="w-full h-[830px] object-cover rounded-md shadow-lg">
+            <img src="src/img/cosplay/mia/lala.jpg" alt="Cosplay Lala" class="w-full h-[830px] object-cover rounded-md shadow-lg">
             <div class="space-y-4">
-                <img src="src/img/cosplay/japan-con/***" alt="Cosplay Ranma fille" class="w-full h-[400px] object-cover rounded-md shadow-lg">
-                <img src="src/img/cosplay/japan-con/***" alt="Cosplay Lucifa" class="w-full h-[400px] object-cover rounded-md shadow-lg">
+                <img src="src/img/cosplay/mia/lalaJeanMarc.jpg" alt="Lala et Jean-Marc" class="w-full h-[400px] object-cover rounded-md shadow-lg object-top">
+                <img src="src/img/cosplay/mia/meloetta.jpg" alt="Cosplay Meloetta" class="w-full h-[400px] object-cover rounded-md shadow-lg">
             </div>
-        </div>
-
-        <!-- Section intermédiaire avec grille -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-16">
-            <img src="src/img/cosplay/japan-con/***" alt="Cosplay Lala" class="w-full h-auto object-cover rounded-md shadow-lg">
-            <img src="src/img/cosplay/japan-con/***" alt="Cosplay Lucifa 2" class="w-full h-auto object-cover rounded-md shadow-lg">
-            <img src="src/img/cosplay/japan-con/***" alt="Cosplay paysage 1" class="w-full h-[400px] object-cover rounded-md shadow-lg">
-            <img src="src/img/cosplay/japan-con/***" alt="Cosplay paysage 2" class="w-full h-[400px] object-cover rounded-md shadow-lg">
-        </div>
-
-        <!-- Section finale avec trois colonnes -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mb-16">
-            <img src="src/img/cosplay/japan-con/***" alt="Cosplay final 1" class="w-full h-auto object-cover rounded-md shadow-lg">
-            <img src="src/img/cosplay/japan-con/***" alt="Cosplay final 2" class="w-full h-auto object-cover rounded-md shadow-lg">
-            <img src="src/img/cosplay/japan-con/***" alt="Cosplay final 3" class="w-full h-auto object-cover rounded-md shadow-lg">
         </div>
     </main>
 
@@ -46,17 +34,18 @@
 
     <!-- Script pour inclure le header et le footer -->
     <script>
-        // Charger le header
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
-            .catch(error => console.error('Erreur lors du chargement du header:', error));
+      // Charger le header
+    fetch('header.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('header-placeholder').innerHTML = data)
+    .catch(error => console.error('Erreur lors du chargement du header:', error));
 
-        // Charger le footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer-placeholder').innerHTML = data)
-            .catch(error => console.error('Erreur lors du chargement du footer:', error));
+    // Charger le footer
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+    .catch(error => console.error('Erreur lors du chargement du footer:', error));
+
     </script>
 </body>
 </html>
