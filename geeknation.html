@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek nation</title>
+    <!-- Ajout du CDN Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 p-4">
+    <div id="header-placeholder"></div>
+    <main class="max-w-screen-xl mx-auto p-4">
+        <!-- Image principale -->
+        <img src="src/img/geeknation.png" alt="Japan fest" class="w-full mb-8 rounded-md shadow-lg">
+
+        <!-- Titre principal -->
+        <h1 class="text-white text-6xl mb-8 font-bold text-center">Geek nation</h1>
+
+        <!-- Section d'images principales -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-16">
+            <img src="src/img/cosplay/geek nation/ranma.jpg" alt="Cosplay Arale" class="w-full h-1/2  rounded-md shadow-lg   object-cover">
+            
+                <img src="src/img/cosplay/geek nation/ranma5.jpg" alt="Cosplay Arale" class="w-full h-full object-cover rounded-md shadow-lg">
+                <img src="src/img/cosplay/geek nation/ranma4.jpg" alt="Cosplay Ranma" class="w-full h-full object-cover rounded-md shadow-lg">
+            
+        </div>
+
+        <!-- Section intermédiaire avec grille -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-16">
+            <img src="src/img/cosplay/geek nation/ranma3.jpg" alt="Cosplay yami" class="w-full h-full object-cover rounded-md shadow-lg">
+            <img src="src/img/cosplay/geek nation/ranma2.jpg" alt="Cosplay Lala" class="w-full h-auto object-cover rounded-md shadow-lg">
+       
+            <img src="src/img/cosplay/geek nation/Yami.jpg" alt="Cosplay paysage 1" class="w-full h-full object-cover rounded-md shadow-lg">
+          
+        </div>
+      
+
+      
+    </main>
+
+    <!-- Placeholder pour Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script pour inclure le header et le footer -->
+    <script>
+        // Charger le header
+      fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-placeholder').innerHTML = data)
+      .catch(error => console.error('Erreur lors du chargement du header:', error));
+  
+      // Charger le footer
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data)
+      .catch(error => console.error('Erreur lors du chargement du footer:', error));
+  
+      </script>
+</body>
+</html>
