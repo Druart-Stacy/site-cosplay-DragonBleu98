@@ -1,52 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Braderie</title>
-    <!-- Ajout du CDN Tailwind CSS -->
+    <title>Braderies</title>
+    <!-- Ajout de Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-950 min-h-screen flex flex-col">
-    <!-- Placeholder pour Header -->
+<body class="bg-gray-950 p-8">
     <div id="header-placeholder"></div>
-
-    <!-- Contenu principal -->
-    <main class="max-w-screen-xl mx-auto p-8 flex-grow">
-        <!-- Section Titre principal -->
+    
+    <main class="max-w-screen-xl mx-auto p-4">
         <section class="mb-8">
-            <img src="src/img/braderie.jpg" alt="Braderie" class="w-full h-auto mb-8 rounded-md shadow-lg">
-            <h1 class="text-white text-6xl font-bold text-center">Braderie</h1>
+            <img src="src/img/logos/braderie.jpg" alt="Comiccon Bruxelles" class="w-full h-auto mb-8 rounded-md shadow-lg">
+            <h1 class="text-white text-6xl font-bold text-center">Braderies</h1>
         </section>
 
-        <!-- Section par images -->
-        <section class="space-y-12">
-            <!-- Image principale -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <img src="src/img/cosplay/braderies/dourArale.jpg" alt="Cosplay Arale" class="w-full h-[830px] object-cover rounded-md shadow-lg">
-                <div class="space-y-4">
-                    <img src="src/img/cosplay/braderies/dourArale2.jpg" alt="Cosplay Arale" class="w-full h-full object-cover rounded-md shadow-lg">
-                    <img src="src/img/cosplay/braderies/dourRanma.jpg" alt="Cosplay Ranma" class="w-full h-full object-cover rounded-md shadow-lg">
+        <!-- Section par années -->
+        <section class="space-y-4">
+            <!-- 2020 -->
+            <div class="text-center space-y-4">
+                <div class="bg-gray-900">
+                <h2 class="text-white text-3xl mb-4">2020</h2>
+                </div>
+             
+                <!-- Première image avec son texte -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Première image avec son texte -->
+                    <div class="flex flex-col items-start">
+                        <img src="src/img/cosplay/braderies/dourArale.jpg" alt="Dour Arale" class="w-full h-[500px] object-cover rounded-lg shadow-lg object-top">
+                        <p class="text-white text-sm mt-2">****</p>
+                    </div>
+                    
+                    <!-- Deuxième image avec son texte -->
+                    <div class="flex flex-col items-start">
+                        <img src="src/img/cosplay/braderies/dourArale2.jpg" alt="Dour Arale" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+                        <p class="text-white text-sm mt-2">****</p>
+                    </div>
+                </div>
+            
+                <!-- Deuxième image avec son texte -->
+                <!-- <div class="flex flex-col items-start">
+                    <img src="src/img/cosplay/comic-con/***" alt="Manganime HSS 2" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+                    <p class="text-white text-sm mt-2">****</p>
+                </div> -->
+            </div>    
+
+
+               
+            </div>
+
+            <!-- 2021 -->
+            <div class="text-center space-y-4">
+                <div class="bg-gray-900">
+                <h2 class="text-white text-3xl mb-4">2021</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Première image avec son texte -->
+                    <div class="flex flex-col items-start">
+                        <img src="src/img/cosplay/braderies/dourYami.jpg" alt="Yami" class="w-full h-[500px] object-cover rounded-lg shadow-lg object-top">
+                        <p class="text-white text-sm mt-2">****</p>
+                    </div>
+                    
+                    <!-- Deuxième image avec son texte -->
+                    <!-- <div class="flex flex-col items-start">
+                        <img src="src/img/cosplay/braderies/***" alt="***" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+                        <p class="text-white text-sm mt-2">****</p>
+                    </div> -->
+                </div>
+
+
+
+
+                </div>
+
+            <!-- 2022 -->
+            <div class="text-center space-y-4">
+                <div class="bg-gray-900">
+                <h2 class="text-white text-3xl mb-4">2022</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Première image avec son texte -->
+                    <div class="flex flex-col items-start">
+                        <!-- <img src="src/img/cosplay/braderies/" alt="***" class="w-full h-[500px] object-cover rounded-lg shadow-lg object-top">
+                        <p class="text-white text-sm mt-2">****</p> -->
+                    </div>
+                    
+                    <!-- Deuxième image avec son texte -->
+                    <div class="flex flex-col items-start">
+                        <!-- <img src="src/img/cosplay/braderies/***" alt="***" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+                        <p class="text-white text-sm mt-2">****</p> -->
+                    </div>
                 </div>
             </div>
 
-            <!-- Section intermédiaire avec grille -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <img src="src/img/cosplay/braderies/dourYami.jpg" alt="Cosplay Yami" class="w-full h-auto object-cover rounded-md shadow-lg">
-                <img src="src/img/cosplay/braderies/***" alt="Cosplay Lala" class="w-full h-auto object-cover rounded-md shadow-lg">
+            <!-- 2023 -->
+            <div class="text-center space-y-4">
+                <div class="bg-gray-900">
+                <h2 class="text-white text-3xl mb-4">2023</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Première image avec son texte -->
+                    <div class="flex flex-col items-start">
+                        <img src="src/img/cosplay/braderies/dourRanma.jpg" alt="***" class="w-full h-[500px] object-cover rounded-lg shadow-lg object-top">
+                        <p class="text-white text-sm mt-2">****</p>
+                    </div>
+                    
+                    <!-- Deuxième image avec son texte -->
+                    <div class="flex flex-col items-start">
+                        <!-- <img src="src/img/cosplay/braderies/****" alt="***" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+                        <p class="text-white text-sm mt-2">****</p> -->
+                    </div>
+                </div>
             </div>
 
-            <!-- Autres images -->
-            <div class="space-y-8">
-                <img src="src/img/cosplay/braderies/****" alt="Cosplay paysage 1" class="w-full h-[400px] object-cover rounded-md shadow-lg">
-            </div>
+            <!-- 2024 -->
+            <div class="text-center space-y-4">
+                <div class="bg-gray-900">
+                    <h2 class="text-white text-3xl mb-4">2024</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Première image avec son texte -->
+                    <div class="flex flex-col items-start">
+                        <!-- <img src="src/img/cosplay/braderies/****" alt="Dour Ranma" class="w-full h-auto rounded-lg shadow-lg object-cover">
+                         <p class="text-white text-sm text-start">****.</p> -->
+           
+                    </div>
+                
+                    <!-- Deuxième image avec son texte -->
+                    <!-- <div class="flex flex-col items-start">
+                        <img src="src/img/cosplay/comic-con/***" alt="Manganime HSS 2" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+                        <p class="text-white text-sm mt-2">****</p>
+                    </div> -->
+                </div> 
+
+                 </div>
         </section>
     </main>
 
-    <!-- Placeholder pour Footer -->
     <div id="footer-placeholder"></div>
-
-    <!-- Script pour inclure le header et le footer -->
+    
     <script>
         // Charger le header
         fetch('header.html')
